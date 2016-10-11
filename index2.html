@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="../bet/css/form.css"/> 
+
+        <title>Blogs'Long Vũ</title>
+ <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+              <style>
+              /* The Modal (background) */
+              .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  padding-top: 100px; /* Location of the box */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: auto; /* Enable scroll if needed */
+                  background-color: rgb(0,0,0); /* Fallback color */
+                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              }
+
+              /* Modal Content */
+              .modal-content {
+                  background-color: #fefefe;
+                  margin: auto;
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 80%;
+              }
+
+              /* The Close Button */
+              .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+              }
+
+              .close:hover,
+              .close:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+              }
+
+                * {box-sizing:border-box}
+                body {font-family: Verdana,sans-serif;}
+                .mySlides {display:none}
+
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                }
+
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                }
+
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 13px;
+                  width: 13px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.3s ease;
+                }
+
+                .active {
+                  background-color: #717171;
+                }
+
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1s;
+                  animation-name: fade;
+                  animation-duration: 1s;
+                }
+
+                @-webkit-keyframes fade {
+                  from {opacity: .3}
+                  to {opacity: 1}
+                }
+
+                @keyframes fade {
+                  from {opacity: .3}
+                  to {opacity: 1}
+                }
+
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                }
+            </style>
+                
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- Nav -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span>Wing</a>
+                </div>
+                <!-- Nav collapse -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                        <a href="file:///C:/Users/Administrator/Desktop/bet/demo.html"><span class="glyphicon glyphicon-film"></span>Video/Photo</a>
+                    </li>
+                    <li>
+                        <a href="#hobby"><span class="glyphicon glyphicon-heart"></span>hobby</a>
+                    </li>
+                    <li>
+                        <a href="http://www.hdiu.edu.vn/home"><span class="glyphicon glyphicon-user"></span>Study</a>
+                    </li>
+                    <li>
+                        <a href="#memo"><span class="glyphicon glyphicon-pencil"></span>memo</a>
+                    </li>   
+                    <li>
+                        <a href="#contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a>
+                    </li>
+                    <li>
+                        <a href="#comment"><span class="glyphicon glyphicon-comment"></span>Comment</a>
+                    </li>
+                    </ul>
+ 
+                    <div class="navbar-right">
+                        <a href=""><button class="btn btn-danger navbar-btn">Register</button></a>
+                        <a href=""><button class="btn btn-info navbar-btn">Login</button></a>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Navigation -->
+ 
+        <!-- Page Content -->
+        <div class="container">
+            <div class="jumbotron">
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="../bet/image/02.jpg" style="width:100%; height:300px;">
+                  <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="../bet/image/04.jpg" style="width:100%; height:300px;">
+                  <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="../bet/image/05.jpg" style="width:100%; height:300px;">
+                  <div class="text">Caption Three</div>
+            </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                           slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex> slides.length) {slideIndex = 1}
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <marquee behavior="alternate" style= "font-family; font-size:50px; color:red;">Vũ Ngoc Long'S Blogs</marquee>
+                </div>
+            </div>
+            <!-- /.row -->
+ 
+            <!-- Project One -->
+            <div class="row">
+                <div class="col-md-7">
+
+                    <a href="../bet/image/05.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/05.jpg" width="100%"></a>
+                  
+                </div>
+                
+                <div class="col-md-5" id="memo">
+                   
+                    <h3 style="font-family;font-size:50px;color:red;">Mome</h3>
+                    <h4 style="font-family";>Kỷ Niệm Ngày Đầu Tiên</h4>
+                    <p>Ngày đầu tiên bước chân xuống Hà Nội để học.. lần thứ 2 đi xa nhà mà lần này lại không có bố mẹ đi cung
+                                thật sự khá bỡ ngỡ khi xuống đây. Tất cả đều mới mẻ với mình bạn bè, nhà cửa, xe cộ,... Mình chưa bao giờ
+                                thấy nơi nào nhiều xe đến như vậy, có thể theo mình nghĩ đây gọi là một vùng trời đầy xe, đi đâu cũng có xe, hết ô tô, xe máy, xe đạp lại thêm rất nhiều rât nhiều thứ nữa... xe khác 1 loại xe nhiều vô kể trong bến xe Mỹ Đình ... có lẽ bến xe nào cũng nhiều xe đến như vậy... Đi nhập học ngày đầu phải đóng ngay 10tr thật là xót biết bao... tiền của bố mẹ cho đóng nhát cả cục thấy tiếc những vẫn phải cố mà làm :( buồn khi minh không có điều kiện như ngta nhưng vẫn cố để thành người...... còn rất nhiều điều nữa cơ có gì hãy nhấn nút bên dưới kết bạn và ib mình nhé ^_^!</p>
+                         <body>
+                                    <script language="javascript">
+                                    
+                                    var windowChild = null;
+                                    
+                                    function openWindow()
+                                    {
+                                      windowChild = window.open('https://www.facebook.com/profile.php?id=100008376787740', "windowChild ", "width=500, height=500");
+                                        return false;
+                                    }
+                            
+                                 </script>
+                      
+                     
+                            <a class="btn btn-primary" href=""onclick="return openWindow()">Xem Tiếp <span class="glyphicon glyphicon-chevron-right"></span></a>
+                         </body> 
+              
+              </div>
+            </div>
+
+            <!-- /.row -->
+ 
+            <hr>
+ 
+            <!-- Project Two -->
+            <div class="row">
+                <div class="col-md-7">
+                    <a href="#">
+
+                        <a href="../bet/image/4.jpg" data-lightbox="image-1" title="My caption"><img  class="img-responsive" src="../bet/image/4.jpg" width="100%" alt=""> </a>
+                    </a>
+                </div>
+                <div class="col-md-5" id="hobby">
+                 
+                    <h3 style="font-family;font-size:50px;color:red;">Hobby</h3>
+                    <h4>Thích xem phim hoạt hình, nghe nhạc,chơi game</h4>
+                    <h4>Xem phim hành động, võ thuật, viên tưởng, kinh dị, hài, ....</h4>
+                    <p>thích xem phim hoạt hình doremon, lavar,onefire...</p>
+                    <p>Gamer thì tất cả các loại game cũng đều có thể thích chơi nếu hứng :)</p>
+                    <body>
+                      <script language="javascript">
+                        
+                        var windowChild = null;
+                        
+                        function openWindow()
+                        {
+                          windowChild = window.open('https://www.facebook.com/profile.php?id=100008376787740&sk=photos', "windowChild ", "width=500, height=500");
+                            return false;
+                        }
+                        
+                      </script>
+                   
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Xem Tiếp<span class="glyphicon glyphicon-chevron-right" ></span></button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">×</span>
+                            <p><h3 style="font-family;font-size:50px;color:red;">Hobby</h3>
+                              <h4>Thích xem phim hoạt hình, nghe nhạc,chơi game</h4>
+                              <h4>Xem phim hành động, võ thuật, viên tưởng, kinh dị, hài, ....</h4>
+                              <p>thích xem phim hoạt hình doremon, lavar,onefire...</p>
+                              <p>Gamer thì tất cả các loại game cũng đều có thể thích chơi nếu hứng :)</p>
+                            
+                                <a href="../bet/image/4.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/4.jpg" style="width:300px;height:200px;"></a>
+
+                                <a href="../bet/image/08.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/08.jpg" style="width:300px;height:200px;"></a>
+                                 
+                               <a href="../bet/image/09.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/09.jpg" style="width:300px;height:200px;"></a>
+
+                                <a href="../bet/image/010.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/010.jpg" style="width:300px;height:200px;"></a>
+                                   
+                                <a href="../bet/image/011.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/011.jpg" style="width:300px;height:200px;"></a>
+
+                               <a href="../bet/image/012.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/012.jpg" style="width:300px;height:200px;"></a>
+
+                               <a href="../bet/image/013.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/013.jpg" style="width:300px;height:200px;"></a>
+                              
+                              <a href="../bet/image/014.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/014.jpg" style="width:300px;height:200px;"></a>
+                               
+                               <a href="../bet/image/015.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/015.jpg" style="width:300px;height:200px;"></a>
+                            </p>
+                          </div>
+
+                        </div>
+
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks the button, open the modal
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
+
+                 </body>
+               </div>
+            </div>
+            <!-- /.row -->
+ 
+            <hr>
+ 
+            <!-- Project Three -->
+            <div class="tongue">
+                <div class="col-md-5">
+                    <h3 style="font-family;font-size:50px;">Youtube:</h3>
+
+                </div>
+            </div>
+       
+            <div class="col-md-12">
+                <div class="row text-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Sa97rqzit8Q" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BGNPk_41doI" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/A4kcVmA_4FY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <hr>
+            <!-- Pagination -->
+            <div class="row from-left" >
+                <div class="col-lg-12" id="contact">
+                     <div id="main">
+                    <div id="form_sample">      
+                    </div>
+                     <!-- include JavaScript file here -->
+                     <script src="../bet/js/form.js"></script>  
+                           
+                </div>
+            </div>
+          
+ 
+            <hr>
+ 
+          
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Blogs'Long Vũ</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+ 
+                <body style="background: url(http://i242.photobucket.com/albums/ff54/trannampro/background1.jpg)  repeat;">
+            <div class="container" id="comment">
+              <h1>Để Lại Ý Kiến Tại Đây</h1>
+              <p>Vui lòng đóng góp ý kiến để phát triển wedsite:</p>
+              <form>
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </form>
+            </div>
+        </div>
+        <!-- /.container -->
+ 
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+ 
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

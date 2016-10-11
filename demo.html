@@ -1,0 +1,245 @@
+<html>
+<head>
+	<title>Video/Photo</title>
+   <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../bet/css/form.css"/> 
+		 <script src="js/jquery-1.10.2.min.js"></script>
+			<script src="js/lightbox-2.6.min.js"></script>
+			<link href="css/lightbox.css" rel="stylesheet" />
+        <!-- Bootstrap Core CSS -->
+        <link href="../bet/css/bootstrap.min.css" rel="stylesheet">
+ 
+        <!-- Custom CSS -->
+        <link href="../bet/css/style.css" rel="stylesheet">
+              <style>
+              /* The Modal (background) */
+              .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  padding-top: 100px; /* Location of the box */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: auto; /* Enable scroll if needed */
+                  background-color: rgb(0,0,0); /* Fallback color */
+                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              }
+
+              /* Modal Content */
+              .modal-content {
+                  background-color: #fefefe;
+                  margin: auto;
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 80%;
+              }
+
+              /* The Close Button */
+              .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+              }
+
+              .close:hover,
+              .close:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+              }
+
+                * {box-sizing:border-box}
+                body {font-family: Verdana,sans-serif;}
+                .mySlides {display:none}
+
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                }
+
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                }
+
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 13px;
+                  width: 13px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.3s ease;
+                }
+
+                .active {
+                  background-color: #717171;
+                }
+
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1s;
+                  animation-name: fade;
+                  animation-duration: 1s;
+                }
+
+                @-webkit-keyframes fade {
+                  from {opacity: .3}
+                  to {opacity: 1}
+                }
+
+                @keyframes fade {
+                  from {opacity: .3}
+                  to {opacity: 1}
+                }
+
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                }
+            </style>
+                
+   
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- Nav -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="file:///C:/Users/Administrator/Desktop/bet/index2.html#"><span class="glyphicon glyphicon-home"></span>Wing</a>
+                </div>
+                <!-- Nav collapse -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                        <a href="../bet/demo.html"><span class="glyphicon glyphicon-film"></span>Video/Photo</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Administrator/Desktop/bet/index2.html#hobby"><span class="glyphicon glyphicon-heart"></span>hobby</a>
+                    </li>
+                    <li>
+                        <a href="http://www.hdiu.edu.vn/home"><span class="glyphicon glyphicon-user"></span>Study</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Administrator/Desktop/bet/index2.html#memo"><span class="glyphicon glyphicon-pencil"></span>memo</a>
+                    </li>   
+                    <li>
+                        <a href="file:///C:/Users/Administrator/Desktop/bet/index2.html#contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Administrator/Desktop/bet/index2.html#comment"><span class="glyphicon glyphicon-comment"></span>Comment</a>
+                    </li>
+                    </ul>
+ 
+                    <div class="navbar-right">
+                        <a href=""><button class="btn btn-danger navbar-btn">Register</button></a>
+                        <a href=""><button class="btn btn-info navbar-btn">Login</button></a>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        
+        <div class="modal-content">
+        	<h1 style="font-size:40; color:blue;">Ảnh</h1>
+        	 					<a href="../bet/image/4.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/4.jpg" style="width:300px;height:200px;"></a>
+
+                                <a href="../bet/image/08.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/08.jpg" style="width:300px;height:200px;"></a>
+                                 
+                               <a href="../bet/image/09.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/09.jpg" style="width:300px;height:200px;"></a>
+
+                                <a href="../bet/image/010.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/010.jpg" style="width:300px;height:200px;"></a>
+                                   
+                                <a href="../bet/image/011.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/011.jpg" style="width:300px;height:200px;"></a>
+
+                               <a href="../bet/image/012.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/012.jpg" style="width:300px;height:200px;"></a>
+
+                               <a href="../bet/image/013.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/013.jpg" style="width:300px;height:200px;"></a>
+                              
+                              <a href="../bet/image/014.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/014.jpg" style="width:300px;height:200px;"></a>
+                               
+                               <a href="../bet/image/015.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/015.jpg" style="width:300px;height:200px;"></a>
+                                <a href="../bet/image/01.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/01.jpg" style="width:300px;height:200px;"></a>
+                                 <a href="../bet/image/02.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/02.jpg" style="width:300px;height:200px;"></a>
+                                  <a href="../bet/image/03.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/03.jpg" style="width:300px;height:200px;"></a>
+                                   <a href="../bet/image/04.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/04.jpg" style="width:300px;height:200px;"></a>
+                                    <a href="../bet/image/05.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/05.jpg" style="width:300px;height:200px;"></a>
+                                     <a href="../bet/image/16.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/16.jpg" style="width:300px;height:200px;"></a>
+                                      <a href="../bet/image/07.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/07.jpg" style="width:300px;height:200px;"></a>
+                                       <a href="../bet/image/17.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/17.jpg" style="width:300px;height:200px;"></a>
+                                        <a href="../bet/image/12.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/12.jpg" style="width:300px;height:200px;"></a>
+                                         <a href="../bet/image/15.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/15.jpg" style="width:300px;height:200px;"></a>
+                                          <a href="../bet/image/6.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/6.jpg" style="width:300px;height:200px;"></a>
+                                           <a href="../bet/image/9.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/9.jpg" style="width:300px;height:200px;"></a>
+
+                                 <a href="../bet/image/09.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/09.jpg" style="width:300px;height:200px;"></a>
+                                   <a href="../bet/image/8.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/8.jpg" style="width:300px;height:200px;"></a> 
+                                     <a href="../bet/image/10.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/10.jpg" style="width:300px;height:200px;"></a>
+                                        <a href="../bet/image/13.jpg" data-lightbox="image-1" title="My caption"><img src="../bet/image/13.jpg" style="width:300px;height:200px;"></a>
+
+                         </div>
+                           <hr>
+                  <div class="modal-content">
+                 <div class="col-md-12">
+                 	<h1 style="font-size:40">Video</h1>
+                <div class="row text-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Sa97rqzit8Q" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BGNPk_41doI" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/A4kcVmA_4FY" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SNSB54rI0kg" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/eER1b4FQwt8" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Yc8l23Nwm44" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aqwWbJPoxq8" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GhJByQX-duU" frameborder="0" allowfullscreen></iframe>
+		                </div>
+		            </div>
+		          
+				 </div>
+					
+						<body style="background: url(http://i242.photobucket.com/albums/ff54/trannampro/background1.jpg)  repeat;">
+				<div class="container" >
+				  <h1>Để Lại Ý Kiến Tại Đây</h1>
+				  <p>Vui lòng đóng góp ý kiến để phát triển wedsite:</p>
+				  <form>
+				    <div class="form-group">
+				      <label for="comment">Comment:</label>
+				      <textarea class="form-control" rows="5" id="comment"></textarea>
+				    </div>
+				  </form>
+				</div>
+	
+</body>
+</html>
